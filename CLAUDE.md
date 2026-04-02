@@ -84,6 +84,27 @@ npm run typecheck
 - **Multi-environment**: KINTONE_ENV variable tags schema files (dev/prod)
 - **WSL compatibility**: File watcher uses polling mode for WSL environments
 
+## kintone開発リファレンス
+
+- **公式ドキュメント**: https://cybozu.dev/ja/
+- 実装や仕様の調査時は必ず公式リファレンスを参照すること（推測で実装しない）
+
+## kintone開発ルール
+
+### 組み込みAPI優先
+
+JSカスタマイズを実装する際、自前でロジックを書く前にkintone JS APIの組み込み関数で実現できないか必ず https://cybozu.dev/ja/ で調べること。組み込みで対応可能なものは組み込みを使う。
+
+## kintone設計ルール
+
+### サブテーブルの利用注意
+
+サブテーブル（テーブル型フィールド）は、別アプリ＋ルックアップ/関連レコードで代替可能な場合はそちらを優先する。
+
+- CLIからサブテーブルのフィールド修正が不可（削除→再作成が必要、データ消失）
+- やむを得ず使用する場合はフィールド設計を完全に確定してから作成
+- 修正時は必ず `npm run backup` でバックアップ後に実施
+
 ## Adding a New App
 
 1. Run `npm run create` (interactive)
