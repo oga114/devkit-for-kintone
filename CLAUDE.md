@@ -91,6 +91,14 @@ npm run typecheck
 
 ## kintone開発ルール
 
+### フィールドコードの命名規則
+
+フィールドコードは英語 snake_case で命名する。ラベル（表示名）は日本語。ユーザーが明示的にコードを指定した場合はそれに従う。
+
+- 業務固有の用語はローマ字: `bumon_code`, `tokuisaki_name`, `souko_code`
+- 一般的な項目は英語: `zip_code`, `tel`, `fax`, `email`, `memo`
+- 区分 `_kbn`, フラグ `_flag`, 日付 `_date`, 金額 `_amount`, 名称 `_name`
+
 ### 組み込みAPI優先
 
 JSカスタマイズを実装する際、自前でロジックを書く前にkintone JS APIの組み込み関数で実現できないか必ず https://cybozu.dev/ja/ で調べること。組み込みで対応可能なものは組み込みを使う。
