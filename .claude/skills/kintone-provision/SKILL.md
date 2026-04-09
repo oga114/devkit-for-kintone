@@ -45,9 +45,9 @@ Markdown設計ドキュメント
 | company_name | 文字列（1行） | 会社名 | ○ | |
 | contact_name | 文字列（1行） | 担当者名 | ○ | |
 | email | リンク | メールアドレス | | protocol: MAIL |
-| phone | 文字列（1行） | 電話番号 | | |
+| tel | 文字列（1行） | 電話番号 | | |
 | status | ドロップダウン | ステータス | ○ | 新規, 商談中, 成約, 失注 |
-| note | 文字列（複数行） | 備考 | | |
+| memo | 文字列（複数行） | 備考 | | |
 
 ### ビュー
 - 全件一覧: company_name, contact_name, status, email
@@ -65,6 +65,23 @@ Markdown設計ドキュメント
 | expected_date | 日付 | 受注予定日 | | |
 | description | 文字列（複数行） | 詳細 | | |
 ```
+
+### フィールドコードの命名規則
+
+フィールドコードは **英語 snake_case** で命名する（ラベルは日本語のまま）。
+ユーザーが設計ドキュメントでフィールドコードを明示的に指定している場合はそれに従う。
+指定がない場合は以下の規則で自動命名する。
+
+| ルール | 例 |
+|---|---|
+| 業務固有の用語はローマ字 | `bumon_code`, `tokuisaki_name`, `souko_code`, `shohin_code` |
+| 一般的な項目は英語 | `zip_code`, `tel`, `fax`, `email`, `memo` |
+| 区分は `_kbn` | `tax_kbn`, `delete_kbn`, `shohin_kbn` |
+| フラグは `_flag` | `souko_renkei_flag`, `disabled_flag` |
+| 日付は `_date` | `torihiki_start_date`, `campaign_start_date` |
+| 金額は `_amount` | `genka_amount`, `yoshin_limit` |
+| 名称は `_name` | `bumon_name`, `tokuisaki_name1` |
+| 略称は `_short` | `tokuisaki_short`, `nouhin_short` |
 
 ### フィールド型の対応表
 
