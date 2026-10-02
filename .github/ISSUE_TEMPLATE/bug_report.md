@@ -24,7 +24,7 @@ assignees: ''
 - OS: [e.g., Windows 11, macOS 14, Ubuntu 24.04, WSL2]
 - Node.js: [e.g., 20.10.0]
 - npm: [e.g., 10.2.0]
-- kintone-devkit: [e.g., 1.0.0]
+- Devkit for kintone: [e.g., 1.0.0]
 
 ## エラーログ / Error Log
 ```

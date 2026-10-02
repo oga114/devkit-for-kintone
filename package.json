@@ -1,5 +1,5 @@
 {
-  "name": "kintone-devkit",
+  "name": "devkit-for-kintone",
   "version": "1.0.0",
   "description": "TypeScript + Vite によるkintone開発ツールキット（カスタマイズ・プラグイン・スキーマ管理）",
   "type": "module",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oga114/kintone-devkit.git"
+    "url": "https://github.com/oga114/devkit-for-kintone.git"
   },
   "bugs": {
-    "url": "https://github.com/oga114/kintone-devkit/issues"
+    "url": "https://github.com/oga114/devkit-for-kintone/issues"
   },
-  "homepage": "https://github.com/oga114/kintone-devkit#readme",
+  "homepage": "https://github.com/oga114/devkit-for-kintone#readme",
   "scripts": {
     "dev": "tsx scripts/dev.ts",
     "build": "tsx scripts/build.ts",

@@ -6,8 +6,8 @@
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/oga114/kintone-devkit.git
-cd kintone-devkit
+git clone https://github.com/oga114/devkit-for-kintone.git
+cd devkit-for-kintone
 
 # 依存パッケージをインストール
 npm install

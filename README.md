@@ -1,6 +1,6 @@
-# kintone-devkit
+# Devkit for kintone
 
-[![CI](https://github.com/oga114/kintone-devkit/actions/workflows/ci.yml/badge.svg)](https://github.com/oga114/kintone-devkit/actions/workflows/ci.yml)
+[![CI](https://github.com/oga114/devkit-for-kintone/actions/workflows/ci.yml/badge.svg)](https://github.com/oga114/devkit-for-kintone/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org/)
 
@@ -691,3 +691,5 @@ Claude Codeで使用できるスキルが`.claude/skills/`に定義されてい�
 ## ライセンス
 
 MIT
+
+kintone はサイボウズ株式会社の登録商標です。本リポジトリはサイボウズ株式会社の公式製品ではありません。

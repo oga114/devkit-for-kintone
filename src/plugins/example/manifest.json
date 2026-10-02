@@ -7,8 +7,8 @@
     "en": "Example Plugin"
   },
   "description": {
-    "ja": "kintone-devkitのサンプルプラグインです",
-    "en": "Example plugin for kintone-devkit"
+    "ja": "Devkit for kintone のサンプルプラグインです",
+    "en": "Example plugin for Devkit for kintone"
   },
   "icon": "image/icon.png",
   "desktop": {
